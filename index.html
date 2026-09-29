@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f3" />
+    <meta name="description" content="Organiza tu progreso en chino y practica la lectura de caracteres y frases." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=18" />
+    <title>Hanzi Diario — tu chino, a tu ritmo</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Hanzi Diario, inicio">
+          <span class="brand-mark">汉</span>
+          <span class="brand-copy"><strong>hanzi<span>.</span></strong><small>DIARIO</small></span>
+        </a>
+        <div class="side-label">TU ESPACIO</div>
+        <nav class="main-nav" id="desktop-nav"></nav>
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-tip">
+          <span class="tip-spark">✳</span>
+          <p>Un poco cada día.<br /><strong>Mucho a la larga.</strong></p>
+          <div class="tip-characters" aria-hidden="true">日日</div>
+        </div>
+        <div class="profile-row"><div class="avatar">你</div><div><strong>Mi espacio</strong><small>Aprendiz de chino</small></div><span class="profile-dot"></span></div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="mobile-brand"><span class="brand-mark">汉</span><strong>hanzi<span>.</span></strong></div>
+          <div class="breadcrumb"><span>MI ESPACIO</span><span class="crumb-slash">/</span><strong id="page-breadcrumb">INICIO</strong></div>
+          <div class="topbar-right"><span class="today-label" id="today-label"></span><button class="icon-button theme-toggle" id="theme-toggle" aria-label="Activar modo oscuro" title="Activar modo oscuro">☾</button><button class="account-button" id="google-signin"><span class="google-mark" aria-hidden="true">G</span><span id="account-label">Entrar con Google</span></button><button class="icon-button" id="install-button" aria-label="Instalar aplicación" title="Instalar aplicación" hidden><span class="install-glyph">↓</span></button><div class="top-avatar" id="top-avatar" aria-label="Mi perfil">你</div></div>
+        </header>
+        <div class="page-content" id="page-content"></div>
+      </main>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación principal"></nav>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script src="firebase-config.js?v=18"></script>
+    <script src="hsk1.js?v=18"></script>
+    <script src="app.js?v=18"></script>
+    <script type="module" src="cloud.js?v=18"></script>
+  </body>
+</html>

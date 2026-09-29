@@ -1,0 +1,6 @@
+.firebase/
+node_modules/
+firebase-debug.log
+ui-debug.log
+hosting-upload*.zip
+/firebase-config.js

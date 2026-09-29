@@ -1,0 +1,11 @@
+{
+  "name": "Hanzi Diario — tu chino, a tu ritmo",
+  "short_name": "Hanzi Diario",
+  "description": "Guarda tu progreso en chino y practica la lectura cada día.",
+  "lang": "es",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f3",
+  "theme_color": "#f7f7f3",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
